@@ -1,0 +1,99 @@
+body {
+  background-color: black;
+  color: white;
+
+  text-align: center;
+  align-content: center;
+  margin-top: 3rem;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1.7;
+
+  font-family: "Pacifico", cursiva;
+}
+
+h1 span {
+  color: #55b8ff;
+}
+
+p {
+  font-size: 2rem;
+  margin-bottom: 4.5rem;
+}
+
+a {
+  color: white;
+  background-color: #7155ff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+
+  font-size: 2rem;
+  border-radius: .5rem;
+
+  transition: background-color 300ms;
+}
+
+a:hover {
+  background-color: #8068f8;
+}
+
+.img-capa {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+.img-capa:hover {
+  filter: hue-rotate(7deg) contrast(101%) saturate(150%);
+  transform: scale(1.1) rotate(-1deg);
+  cursor: pointer;
+}
+
+.img-capa, h1, h1 span {
+  margin: 2px;
+}
+
+#bg-image {
+  background-image: url("./img/img-odonto.jpg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  opacity: 0.3;
+
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  
+}
+
+@media (width < 40rem) {
+  html {
+    font-size: 70%;
+  }
+}
+
+h1, p, a, .img-capa {
+  animation: appear 1s backwards;
+}
+
+h1 {
+  animation-delay: 0.2s;
+}
+
+p {
+  animation-delay: 0.8s;
+}
+
+a {
+  animation-delay: 1.6s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+}
